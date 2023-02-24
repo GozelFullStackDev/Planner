@@ -1,24 +1,24 @@
-import logo from './logo.svg';
 import './App.css';
+import spa from './spa.avif';
+import beauty from './beauty.avif';
+
+import { Planner } from './planner';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className='app'>
+      <div className='container'>
+<img src = { beauty } alt="beauty" width= "200px"/>
+      </div>
+      <div className='container'>
+        <h1>Planner</h1>
+      </div>
+   <Planner/>
+   <div className='container'>
+<img src = { spa } width="200px" alt ="day spa"/>
+   </div>
     </div>
+ 
   );
 }
 
